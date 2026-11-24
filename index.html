@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Selin Şahin | 24 Kasım Öğretmenler Günü</title>
+  <link rel="stylesheet" href="style.css?v=1" />
+</head>
+<body>
+  <div class="ambient-layer" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="orb orb-4"></span>
+  </div>
+
+  <div class="mobile-shell">
+    <header class="top-bar">
+      <div class="grad-badge-top">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span>M.Sc. × Math Lab</span>
+      </div>
+
+      <a
+        class="insta-btn"
+        href="https://www.instagram.com/selinsah1n/?utm_source=ig_web_button_share_sheet"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram @selinsah1n"
+      >
+        <img class="insta-icon" src="instagram.png" alt="Instagram" width="22" height="22" />
+        <span>@selinsah1n</span>
+      </a>
+    </header>
+
+    <main class="container">
+      <section class="hero reveal">
+        <div class="hero-kicker">
+          <span class="badge">24 Kasım Öğretmenler Günü • Matematik</span>
+          <span class="edition-chip">Young • Grad School • Project Mode</span>
+        </div>
+
+        <div class="polaroid-wrap">
+          <span class="tape tape-left" aria-hidden="true"></span>
+          <span class="tape tape-right" aria-hidden="true"></span>
+          <figure class="polaroid">
+            <div class="polaroid-img-box">
+              <img src="image1.jpg" alt="Selin Şahin" />
+            </div>
+            <figcaption>
+              <strong>Selin Şahin</strong>
+              <span>Matematik Öğretmeni &amp; Proje Mentoru</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <h1 class="hero-title">Sayıların ötesinde, fikirlerin büyüdüğü dersler</h1>
+        <p class="hero-sub">
+          Hem yüksek lisans koşturmacasında hem de sınıf içinde ürettiğimiz projelerde; matematiği kuru formüllerden çıkarıp canlı bir oyuna dönüştüren hocamıza özel 24 Kasım sayfası.
+        </p>
+      </section>
+
+      <section class="vibe-section reveal" aria-labelledby="vibeTitle">
+        <div class="section-head">
+          <div>
+            <h2 id="vibeTitle">Selin Hoca’nın Ders &amp; Proje Günlüğü</h2>
+            <span class="section-sub">Genç enerji, yüksek lisans vizyonu ve birlikte üretim</span>
+          </div>
+          <span class="section-pill">24 Kasım</span>
+        </div>
+
+        <div class="vibe-grid">
+          <div class="vibe-box box-indigo">
+            <span class="vibe-icon">🎓</span>
+            <strong>Yüksek Lisans Temposu</strong>
+            <p>Akademik dünyanın taze enerjisini doğrudan derse taşıyan dinamik ve güncel bir bakış.</p>
+          </div>
+
+          <div class="vibe-box box-emerald">
+            <span class="vibe-icon">🚀</span>
+            <strong>Ortak Projeler</strong>
+            <p>Sadece tahtada kalmayan; birlikte kafa yorduğumuz, kurguladığımız ve geliştirdiğimiz fikirler.</p>
+          </div>
+
+          <div class="vibe-box box-amber">
+            <span class="vibe-icon">⚡</span>
+            <strong>Sıkılmadan Matematik</strong>
+            <p>Esprili, akıcı ve zevkli derslerle “matematik zor mu?” sorusunu unutturan bir atmosfer.</p>
+          </div>
+
+          <div class="vibe-box box-rose">
+            <span class="vibe-icon">🧠</span>
+            <strong>Sürekli Merak</strong>
+            <p>Her problemde yeni bir yol arayan, öğrencisinin fikrini ciddiye alan o genç mentör ruhu.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="challenge-section reveal" aria-labelledby="challengeTitle">
+        <div class="section-head">
+          <div>
+            <h2 id="challengeTitle">Hocaya Özel: İçinden Çıkılamayan Formül</h2>
+            <span class="section-sub">Yüksek lisans seviyesinde minik bir 24 Kasım meydan okuması</span>
+          </div>
+          <span class="section-pill pill-danger">Boss Level</span>
+        </div>
+
+        <article class="formula-card">
+          <div class="formula-top">
+            <span class="formula-tag">Özel Kurgu • Limit &amp; Seri</span>
+            <span class="formula-difficulty">Zorluk: ∞</span>
+          </div>
+
+          <div class="math-display" id="mathFormula">
+            S = lim<sub>n→∞</sub> ∑<sub>k=1</sub><sup>n</sup> [ (k² + k + 1) / k! ] · sin( π / (k + 2) )
+          </div>
+
+          <p class="formula-note">
+            Hocam, yüksek lisans tez/ders notlarının arasında buna bir göz at bakalım; yakınsıyor mu, yoksa bizi sabaha kadar tahtada mı tutuyor?
+          </p>
+
+          <div class="challenge-actions">
+            <button type="button" class="btn-hint" id="toggleHintBtn">İpucu Ver</button>
+            <button type="button" class="btn-solution" id="toggleSolBtn">Çözüm Notunu Aç</button>
+          </div>
+
+          <div class="drawer-box hidden" id="hintBox">
+            <strong>İpucu:</strong> Paydadaki <code>k!</code> faktöriyel büyümesi, paydaki <code>k² + k + 1</code> polinomunu ve <code>|sin(...)| ≤ 1</code> sınırını nasıl ezer?
+          </div>
+
+          <div class="drawer-box solution-box hidden" id="solutionBox">
+            <strong>Hoca İçin Not:</strong> Her terimin mutlak değeri <code>(k² + k + 1) / k!</code> ile sınırlandırılır. <code>k ≥ 4</code> için <code>k² + k + 1 &lt; 2^k</code> ve <code>k!</code> super-üstel büyüdüğünden seri <strong>mutlak yakınsaktır</strong> (ve kapalı formda e tabanlı terimlere ayrılabilir). 24 Kasım bonusu: <em>“Hocam kahveler benden, kalanı sizde!”</em>
+          </div>
+        </article>
+      </section>
+
+      <section class="projects-section reveal" aria-labelledby="projectsTitle">
+        <div class="section-head">
+          <div>
+            <h2 id="projectsTitle">Birlikte Ürettiğimiz İşler</h2>
+            <span class="section-sub">Kartlara dokunarak detayları incele</span>
+          </div>
+          <span class="section-pill">Collab</span>
+        </div>
+
+        <div class="project-tabs" role="tablist" aria-label="Proje seçimi">
+          <button type="button" class="proj-chip active" data-proj="0">Proje 01 • Fikir &amp; Tasarım</button>
+          <button type="button" class="proj-chip" data-proj="1">Proje 02 • Uygulama &amp; Kod</button>
+          <button type="button" class="proj-chip" data-proj="2">Proje 03 • Ders &amp; Mentörlük</button>
+        </div>
+
+        <article class="proj-card" id="projCard">
+          <div class="proj-header">
+            <strong id="projTitle">Fikirden Tasarıma Hızlı Prototip</strong>
+            <span class="proj-badge" id="projBadge">Yüksek Enerji</span>
+          </div>
+          <p class="proj-desc" id="projDesc"></p>
+          <blockquote class="proj-quote" id="projQuote"></blockquote>
+        </article>
+      </section>
+
+      <section class="tribute-card reveal">
+        <span class="tribute-badge">Happy Teachers’ Day</span>
+        <h3>İyi ki varsın Selin Hocam!</h3>
+        <p>
+          Genç enerjin, yüksek lisans azmin, zevkli derslerin ve birlikte ürettiğimiz projelerdeki o harika uyum için 24 Kasım Öğretmenler Günün kutlu olsun!
+        </p>
+      </section>
+
+      <footer class="footer-note reveal">
+        <p>24 Kasım Öğretmenler Günü • <strong>Selin Şahin</strong></p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js?v=1"></script>
+</body>
+</html>
